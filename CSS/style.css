@@ -1,0 +1,87 @@
+@import url("ttps://fonts.googleapis.com/css?family-montserrat:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #fff;
+  --secondary: #f7f7f7;
+  --text: #000;
+  --border: #91a1a1;
+  --bottom: #4d4e53;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  margin: 0;
+  background-color: var(--primary);
+}
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 290px;
+  width: 300px;
+  height: 100%;
+  border-right: 2px solid #777;
+  background: var(--secondary);
+}
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+nav a {
+  color: var(--text);
+  display: block;
+  text-decoration: none;
+  border-top: 1px solid var(--border);
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+}
+main {
+  position: absolute;
+  margin-left: 300px;
+  background: var(--primary);
+}
+section {
+  padding: 20px;
+  line-height: 1.5;
+}
+header {
+  font-size: 24px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--dark);
+}
+#main-doc header {
+  text-align: left;
+  margin: 0;
+}
+
+section article {
+  margin: 15px;
+  color: var(--bottom);
+  font-size: 0.96rem;
+}
+section li {
+  margin: 15px 0px 0px 20px;
+}
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 2;
+  background-color: var(--secondary);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+}
